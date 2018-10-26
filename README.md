@@ -2,7 +2,7 @@
 #Project proposal
 
 Objective:
-The objective of this project is to create a code that combine two data sets and manipulate the resulting data into a form that can be used in R in order to graph the data. The data should be formatted in a way that multiple graphing techniques can be created quickly and efficiently. This data is particle size data from sand sizes down to clay. Sand size grains were sieved by hand, while the clay and silt sizes were analyzed on Beckman Coulter single wavelength LS13-320 particle size analyzer. The hand sieved data and the particle analyzer data must be combined in such a way that each sample must have particle size data from sand to clay in a single column represented as a mass percent.
+The objective of this project is to create a code to combine two data sets and manipulate the resulting data into a form that can be used in R in order to graph the data. The data should be formatted in a way that multiple graphing techniques can be created quickly and efficiently. This data is particle size data from sand sizes down to clay. Sand size grains were sieved by hand, while the clay and silt sizes were analyzed on Beckman Coulter single wavelength LS13-320 particle size analyzer. The hand sieved data and the particle analyzer data must be combined in such a way that each sample must have particle size data from sand to clay in a single column represented as a mass percent.
 
 Data source:
 This data was collected by two previous master students under Dr. Vesper. The sediment is from a variety of caves from West Virginia and the surrounding states. Files are in the git repo
