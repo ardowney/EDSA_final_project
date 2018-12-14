@@ -120,11 +120,13 @@ averaged_data_long <- averaged_data_long [,-ncol(averaged_data_long)]
 averaged_data_long <- as.data.frame(cbind(averaged_data_long, mass_percent))
 
 
-#plotting the data as a cumulative percent 
+#plotting packages
 library(ggplot2)
 library(scales)
+library(colorspace)
 theme_set(theme_classic())
 
+#plotting the data as a cumulative percent
 colors <- rainbow_hcl(14, start = 200, end = 0)
 dens <- density(averaged_data_long[averaged_data_long$sample %in% "DLBK3", 3])
 ggplot(averaged_data_long, aes(x = sample, y = mass_percent ,fill = particle_bins)) + 

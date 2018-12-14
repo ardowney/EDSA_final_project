@@ -1,3 +1,6 @@
+# manipulates the raw data from the laser particle analyzer.
+# usage: bash cut_loop.sh
+
 mkdir particle_analyzer_data_edited
 cd "EAB JLR 1_3_18"
 mv *.xls ../particle_analyzer_data_edited
@@ -17,5 +20,5 @@ done
 
 rm *-e
 ls *.txt | cut -d . -f 1 > ../dataframe_list.txt
-
 ls *.txt | cut -d _ -f 1,2 > ../replication_list.txt
+ls *.txt | cut -d _ -f 1 | uniq > ../sample_list.txt
