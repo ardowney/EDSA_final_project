@@ -177,7 +177,7 @@ ggplot(subset(averaged_data_long, sample %in% "CRWD1"), aes(x=particle_bins, y=m
   stat_summary(fun.y=max, colour="#FF6666", geom="smooth", aes(group = 1)) 
 ```
 
-####ADJUSTING TO YOUR NEEDS
+#### ADJUSTING TO YOUR NEEDS
 *to change particle bins from instrument change lines: 66 and 73
 *to plot just the instrument data: exclude lines 88-139 
 *to change number of averaged replications: adjust the n in rows 82-83 and 142-143. 82-83 are the instrument replications and 142-143 are the sample replications. 
