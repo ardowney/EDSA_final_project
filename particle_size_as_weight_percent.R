@@ -132,7 +132,7 @@ colors <- rainbow_hcl(14, start = 200, end = 0)
 dens <- density(averaged_data_long[averaged_data_long$sample %in% "DLBK3", 3])
 ggplot(averaged_data_long, aes(x = sample, y = mass_percent ,fill = particle_bins)) + 
   geom_bar(position = "fill", stat = "identity") + 
-  scale_fill_viridis(discrete=TRUE, option = "viridis", direction = -1)
+  scale_fill_viridis_d( option = "viridis", direction = -1) #added _d and deleted discrete=TRUE,
 
 #to just plot 1 sample; *REPLACE SAMPLE NAME FIRST*
 ggplot(subset(averaged_data_long, sample %in% "CRWD1"), aes(x=particle_bins, y=mass_percent)) + 
