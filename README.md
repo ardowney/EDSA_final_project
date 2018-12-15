@@ -29,7 +29,7 @@ This data was collected by two previous master students under Dr. Vesper. The se
 #### PREREQUISITES
   *IMPORTANT* this code requires communication with Unix Shell
  
-  **Necessary R packages** include tidyverse and dplyr. This can be installed by running the following script in your R console.
+  **Necessary R packages** These can be installed by running the following script in your R console.
   
           install.packages("tidyverse")
           install.packages("dplyr")
