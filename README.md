@@ -11,8 +11,7 @@
 Sediment was weighed. Sand, from >2 mm to <0.0625mm was hand sieved. The <0.0625 fraction was then collected and ran on a laser diffration particle analyzer. The resulting data from the instrument is reported as a volume percent. This code adjusts the volume percent from the instrument to be out of the mass of the last fraction in the hand sieved data (see flow chart below). The resulting data is given in both a wide and long format. Two graph are made using ggplot2; these may be easily manipulated 
 
 ![alt text](
-        EDSA_final_project/Screen Shot 2018-12-14 at 7.01.37 PM.png
-      )
+        https://github.com/ardowney/EDSA_final_project/blob/master/Screen%20Shot%202018-12-14%20at%207.01.37%20PM.png)
 
   The resulting data is given in both a wide and long format
   * wide format: each column represents one sample, each row represents a particle size bin 
