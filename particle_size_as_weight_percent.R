@@ -1,5 +1,6 @@
 rm(list=ls())
 
+#runs bash script to manipulate instrument data
 x <- "bash cut_loop.sh"
 system (x, intern =TRUE)
 
