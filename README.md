@@ -1,4 +1,7 @@
-#plotting particle size distribution from >2mm to 0.49um. Data from hand sieving and a beckmen LSB-320 single wavelength particle analyzer. 
+#plotting particle size distribution from >2mm to 0.49um. Data from hand sieving and a beckmen LSB-320 single wavelength particle analyzer.
+
+## note for Dr. Hessl: 
+  I deleted all of the products that were created in the script;    run the code at least once to see the outputs. 
 
 ## Included:
 - Overall Project Description
