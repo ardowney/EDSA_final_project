@@ -23,9 +23,11 @@ Sediment was weighed. Sand, from >2 mm to <0.0625mm was hand sieved. The <0.0625
 This data was collected by two previous master students under Dr. Vesper. The sediment is from a variety of caves from West Virginia and the surrounding states. 
 
 #### GETTING STARTED
-  To begin, be sure the "EAB JLR 1_3_18" file is in your working directory. The "data from instrument"" folder is not touched as it holds the unmanipulated raw data.
+- To begin, be sure the "EAB JLR 1_3_18" file is in your working    directory. The "data from instrument" folder is not touched as    it holds the unmanipulated raw data. 
+- Run "particle_size_as_weight_percent.R" script 
 
 #### PREREQUISITES
+  *IMPORTANT* this code requires communication with Unix Shell
   **Necessary R packages** include tidyverse and dplyr. This can be installed by running the following script in your R console.
   
           install.packages("tidyverse")
