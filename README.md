@@ -181,9 +181,11 @@ ggplot(subset(averaged_data_long, sample %in% "CRWD1"), aes(x=particle_bins, y=m
 ```
 
 #### ADJUSTING TO YOUR NEEDS
-*to change particle bins from instrument change lines: 66 and 73
-*to plot just the instrument data: exclude lines 88-139 
-*to change number of averaged replications: adjust the n in rows 82-83 and 142-143. 82-83 are the instrument replications and 142-143 are the sample replications. 
+  *to change particle bins from instrument: change line 29 and the sums in line 36
+
+  *to plot just the instrument data: exclude lines 55-102
+
+  *to change number of averaged replications: adjust the n in rows 45-46 and 105-106. lines 45-46 are the instrument replications (nine of them in the example code) and lines 105-106 are the sample replications (eg. TAL2_R1, TAL2_R2, TAL2_R3). 
 
 ## AUTHORS:
 Autum Downey (ardowney@mix.wvu.edu)

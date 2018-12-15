@@ -51,16 +51,16 @@ colnames(averaged_data) <- replication_list
 #converting volume % to a decimal form 
 averaged_data <- averaged_data[,]/100
 
-#loading in hand data to be added to the created "averaged_data"
+# loading in hand data to be added to the created "averaged_data"
 hand_data_file <- "hand_sieved_data_modified.xlsx"
 hand_data <- read_xlsx(hand_data_file)
 
-#creating a dataframe with just the sand and silt fraction 
+#creating a dataframe with just the sand and silt fraction
 to_bin <- hand_data[ hand_data$`Particle Size` %in% "<0.0625" ,]
 
 #summing the replicate samples
 unique_hand_data <- aggregate(to_bin$`sed (g)`, by=list("sample name"=to_bin$`sample name`), FUN=sum)
-#tidying up the dataframe 
+#tidying up the dataframe
 colnames(unique_hand_data)[colnames(unique_hand_data)=="x"] <- "<0.0625_weight"
 rownames(unique_hand_data) <- unique_hand_data$`sample name`
 
@@ -69,7 +69,7 @@ particle_weight <- unique_hand_data[rownames(unique_hand_data)==colnames(average
 
 #multiplying the averaged data by the <0.0625 weight
 averaged_data<- t(apply(averaged_data, 1, "*", particle_weight))
-#creats a vector of the hand sieved fraction 
+#creats a vector of the hand sieved fraction
 hand_categories <- c("0.125-0.0625", "0.250-0.125", "0.5-0.250", "1-0.5", "2-1", ">2")
 
 #removing <0.0624 rows from the hand data
@@ -83,7 +83,7 @@ hand_data <- hand_data[!(hand_data$`Particle Size`=="<0.0625"),]
 "0.250-0.125" <- hand_data[hand_data$`Particle Size` %in% c("0.125-0.250","0.125-0.25"),7]
 "0.125-0.0625" <- hand_data[hand_data$`Particle Size` %in% c("0.625-0.125","0.0625- 0.125"),7]
 #adding sample names to the >2 dataframe
-rownames(above_2) <- replication_list 
+rownames(above_2) <- replication_list
 
 #combining all the isolated dataframes
 hand_data_to_average_data <- cbind(`0.125-0.0625`,`0.250-0.125`,`0.5-0.250`, `1-0.5`, `2-1`, `above_2`)
@@ -98,7 +98,7 @@ averaged_data <- rbind(averaged_data, hand_data_to_average_data)
 total_volume <- colSums(averaged_data)
 averaged_data<- t(apply(averaged_data, 1, "/", total_volume))
 
-#decimal percent to whole percent 
+#decimal percent to whole percent
 averaged_data <- averaged_data*100
 
 #averages the 3 replications done for each sample
